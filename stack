@@ -1,0 +1,29 @@
+stack = []
+
+def push():
+    e = int(input("enter the length of stack"))
+    i=0
+    while(i < e):
+        element = int(input("enter the elements of stack"))
+        stack.append(element)
+        i = i + 1
+    print(stack)
+
+def pop():
+    if len(stack) == 0:
+        print("stack is empty")
+    else:
+        stack.pop()
+        print(stack)
+
+
+    # e = input("enter the length of stack")
+while(True):
+    choice = int(input("enter the choices 1 to push, 2 to pop, 3 to quit"))
+    if choice == 1:
+        push()
+    elif choice == 2:
+        pop()
+    else:
+        print("you quit")
+        break
